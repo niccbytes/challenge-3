@@ -1,34 +1,24 @@
 // Assignment code here
-function generatePassword(length) {
-  const charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+[]{}|;:,.<>?";
-  let password = "";
 
-  for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * charset.length);
-    password += charset.charAt(randomIndex);
-  }
+// i defined the function and i console.logged inorder to make sure the button works
+function generatePassword(){
+  console.log('you clicked me') 
 
-  return password;
-}
-// Example: Generate a random password with a length of 12 characters
-const randomPassword = generatePassword(12);
-console.log(randomPassword);
+// all my code goes in here to meet the acceptance criteria and then then when you return it it handles the display on the screen
+// 1.) promot the user
 
+let passwordLength = prompt(`Choose a password length between 8 and 128 characters.`); // this is the variable prompt to ask for the lenght of the password
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-function writePassword() {
-  let password = generatePassword();
-  let passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+if (passwordLength >= 8 && passwordLength <= 128) { // this if statment then defines how short and long it needs to be
 
 }
+// a.) password lenght 8<128
+// b.) uppercase lowercase special char and numbers
+// 2.) validate the input
+// 3.) display the password on the page
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  return 'heres the password hoe' // this shows my password in the box
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
