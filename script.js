@@ -18,11 +18,33 @@ if (passwordLength >= 8 && passwordLength <= 128) { // this if statment then def
 
 
 // charachter set 
-let characters = '';
+let characters = '';{
     if (includeUpperCase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     if (includeLowerCase) characters += 'abcdefghijklmnopqrstuvwxyz';
     if (includeNumbers) characters += '0123456789';
     if (includeSpecialCharacters) characters += '!@#$%^&*()_+{}[]|:;"<>,.?/~';
+}
+
+    // Check if at least one character type is selected
+    if (characters === '') {
+      alert("You must include at least one character type (uppercase, lowercase, numbers, or special characters).");
+      return "";
+    }
+
+    // Generate the password
+    let password = '';
+    for (let i = 0; i < passwordLength; i++) {
+      let randomIndex = Math.floor(Math.random() * characters.length);
+      password += characters[randomIndex];
+    }
+
+    return password;
+  } else {
+    alert("Invalid password length. Please choose a length between 8 and 128 characters.");
+    return "";
+  }
+}
+
 
 
 // a.) password lenght 8<128 DONE
@@ -33,8 +55,8 @@ let characters = '';
 
 // 3.) display the password on the page
 
-  return (``); // this shows my password in the box
-} 
+   // this shows my password in the box
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
