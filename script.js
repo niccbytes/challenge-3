@@ -5,12 +5,13 @@ function generatePassword(){
   console.log('you clicked me') 
   
 
-// all my code goes in here to meet the acceptance criteria and then then when you return it it handles the display on the screen
-// 1.) promot the user
+
+
+// 1.) promot the user DONE
 
 let passwordLength = prompt(`Choose a password length between 8 and 128 characters.`); // this is the variable prompt to ask for the lenght of the password
 
-if (passwordLength >= 8 && passwordLength <= 128) { // this if statment then defines how short and long it needs to be
+if (passwordLength >= 8 && passwordLength <= 128) { // this if statment defines how short and long it needs to be
   let includeUpperCase = confirm(`would you like to include uppercase letters?`);
   let includeLowerCase = confirm(`would you like to include lowercase letters?`);
   let includeNumbers = confirm(`would you like to include numbers in this password?`);
@@ -25,37 +26,31 @@ let characters = '';{
     if (includeSpecialCharacters) characters += '!@#$%^&*()_+{}[]|:;"<>,.?/~';
 }
 
-    // Check if at least one character type is selected
+    // Check if they picked one 
     if (characters === '') {
       alert("You must include at least one character type (uppercase, lowercase, numbers, or special characters).");
       return "";
     }
 
-    // Generate the password
+    // this generates the password
     let password = '';
     for (let i = 0; i < passwordLength; i++) {
       let randomIndex = Math.floor(Math.random() * characters.length);
       password += characters[randomIndex];
     }
 
-    return password;
+    return password; // this returns the password and shuvs it back to the box inorder to be displayed
   } else {
     alert("Invalid password length. Please choose a length between 8 and 128 characters.");
     return "";
   }
 }
 
-
-
 // a.) password lenght 8<128 DONE
 // b.) uppercase lowercase special char and numbers prompt DONE
 
-// 2.) validate the input
 
 
-// 3.) display the password on the page
-
-   // this shows my password in the box
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
