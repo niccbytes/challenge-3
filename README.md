@@ -24,7 +24,7 @@ With this password generator, you can easily generate passwords that meet the fo
 - Unpredictability: The generated passwords are random, making them difficult for attackers to guess.
 
 ## link to deployed website
-
+https://niccbytes.github.io/challenge-3/
 
 ## photo
 ![password gen 0-3](https://github.com/niccbytes/challenge-3/assets/140906373/b052ea51-ac36-4178-b23f-29a1923037d2)
