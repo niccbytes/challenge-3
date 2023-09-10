@@ -7,8 +7,8 @@ this is a password generator that is function and generats a password between 8 
 
   - [Password Generator](#project-name)
   - [Description](#description)
-  - [Usage](#usage)
   - [Features](#features)
+  - [Photo](#photo)
  
   
 
@@ -16,7 +16,7 @@ this is a password generator that is function and generats a password between 8 
 
 In today's digital age, password security is more critical than ever. The Password Generator is a simple but powerful tool designed to help you create strong and unique passwords to enhance your online security.
 
-## features AND usage 
+## Features 
 With this password generator, you can easily generate passwords that meet the following criteria:
 - Length: You can specify the length of the password.
 - Complexity: Choose to include a combination of uppercase letters, lowercase letters, numbers, and special characters.
